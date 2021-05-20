@@ -1,0 +1,14 @@
+Steps to execute 
+    1. Compile all the source codes
+javac *.java
+    2. Create the stub and skeleton
+	rmic HelloImpl
+    3. rum the rmi registry
+rmiregsitry&
+    4. rum the rmid daemon.
+rmid -J-Djava.security.policy=policy &
+    5. execute the Server
+java -Djava.security.policy=policy HelloServer&
+    6. execute the Client
+java -Djava.security.policy=policy HelloClient
+
